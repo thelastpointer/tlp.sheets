@@ -21,7 +21,7 @@ private void Start()
 
 I was looking for an easy-to-use tool to handle data in bulk for my game. I already had a CSV parser, and Google Sheets data can be exported as CSV, so here it is.
 
-You need this because you like simple stuff that does one thing only, for free, since you are an awesome person who gets shit done.
+You need this because you like simple stuff that does one thing only, for free, and you are an awesome person who gets shit done.
 
 ## How
 
