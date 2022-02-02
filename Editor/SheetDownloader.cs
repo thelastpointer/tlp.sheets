@@ -34,8 +34,10 @@ namespace TLP.Sheets
                 if (sheetList == null)
                     GetSheetList();
 
-                using (new EditorGUILayout.ScrollViewScope(scroll))
+                using (var scrollView = new EditorGUILayout.ScrollViewScope(scroll))
                 {
+                    scroll = scrollView.scrollPosition;
+
                     foreach (var sheet in sheetList.sheets)
                     {
                         using (new EditorGUILayout.HorizontalScope())

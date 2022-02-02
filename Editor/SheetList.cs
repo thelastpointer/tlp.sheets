@@ -27,7 +27,8 @@ namespace TLP.Sheets
             var sheetList = ScriptableObject.CreateInstance<SheetList>();
             sheetList.sheets = new Sheet[0];
 
-            AssetDatabase.CreateFolder("Assets/", "Editor Default Resources");
+            if (!AssetDatabase.IsValidFolder("Assets/Editor Default Resources"))
+                AssetDatabase.CreateFolder("Assets", "Editor Default Resources");
             AssetDatabase.CreateAsset(sheetList, "Assets/Editor Default Resources/" + SheetListFile);
             AssetDatabase.SaveAssets();
         }
