@@ -13,7 +13,7 @@ private void Start()
 	// Fetch the downloaded CSV
 	var enemyCSV = Resources.Load<TextAsset>("enemies");
 	// Convert CSV to useful data
-	Enemy[] enemies = TLP.Utils.CSVReader.Read<Enemy>(enemyCSV.text);
+	Enemy[] enemies = TLP.Sheets.CSVReader.Read<Enemy>(enemyCSV.text);
 }
 ```
 

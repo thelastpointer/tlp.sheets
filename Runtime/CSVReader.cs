@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 
-namespace TLP.Utils
+namespace TLP.Sheets
 {
     /// <summary>
     /// Reads CSV files.

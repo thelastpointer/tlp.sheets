@@ -1,0 +1,15 @@
+{
+    "name": "TLP.Sheets.Editor",
+    "references": [
+        "GUID:f813bfc85213fea48807db5f17355f8e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
