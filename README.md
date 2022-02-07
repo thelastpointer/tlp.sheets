@@ -1,7 +1,7 @@
 # tlp.sheets
 Download data from Google Sheets in CSV format into your Unity3d project.
 
-![Screenshot](https://github.com/thelastpointer/unitytimetracker/blob/master/Editor/DOCS/screenshot.png)
+![Screenshot](https://github.com/thelastpointer/tlp.sheets/blob/main/Editor/DOCS/screenshot.png)
 
 ## What
 
