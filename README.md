@@ -1,6 +1,8 @@
 # tlp.sheets
 Download data from Google Sheets in CSV format into your Unity3d project.
 
+![Screenshot](https://github.com/thelastpointer/unitytimetracker/blob/master/Editor/DOCS/screenshot.png)
+
 ## What
 
 This is an editor window; you copy and paste your Sheets URL, enter a local .CSV filename, and click on download. The tool handles an arbitrary number of sheets. Each sheet within a document needs to be a separate CSV (and has a separate URL too).
