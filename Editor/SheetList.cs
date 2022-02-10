@@ -134,8 +134,8 @@ namespace TLP.Sheets
             {
                 if (downloadingIdx < sheets.Length)
                 {
-                    currentRequest = UnityEngine.Networking.UnityWebRequest.Get(sheets[downloadingIdx].GetURL());
-                    currentRequest.redirectLimit = 0;
+                    currentRequest = UnityEngine.Networking.UnityWebRequest.Get(sheets[downloadingIdx].GetCSVURL());
+                    currentRequest.redirectLimit = 1;
                     currentRequest.SendWebRequest();
                 }
                 else
@@ -176,9 +176,6 @@ namespace TLP.Sheets
                 //return string.Format("https://docs.google.com/spreadsheets/d/{0}/gviz/tq?tqx=out:csv&sheet={1}", SheetID, SheetGID);
                 //return string.Format("https://docs.google.com/spreadsheets/d/e/{0}/pub?gid={1}&single=true&output=csv", SheetID, SheetGID);
                 return string.Format("https://docs.google.com/spreadsheets/d/{0}/export?gid={1}&format=csv", SheetID, SheetGID);
-
-                //1CaOO30E-88cGzpV-F_xry9_qIyzlbFmdsLS1Eelnnls / 656210503
-                //https://docs.google.com/spreadsheets/d/1CaOO30E-88cGzpV-F_xry9_qIyzlbFmdsLS1Eelnnls/export?gid=656210503&format=csv
             }
 
             public static Sheet Create(string id, string gid, string localFilename, string comment)
