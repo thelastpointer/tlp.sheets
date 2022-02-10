@@ -284,7 +284,7 @@ namespace TLP.Sheets
             }
 
             // Add the last element. Also check start/end apostrophe
-            if ((line[start] == '"') && (line[line.Length - 1] == '"'))
+            if ((start < line.Length) && (line[start] == '"') && (line[line.Length - 1] == '"'))
             {
                 string str = line.Substring(start + 1, line.Length - start - 2);
                 str = str.Replace("\"\"", "\"");
@@ -295,9 +295,6 @@ namespace TLP.Sheets
             {
                 elements.Add(line.Substring(start, line.Length - start));
             }
-
-
-            //elements.Add(line.Substring(start, line.Length - start));
 
             return elements.ToArray();
         }

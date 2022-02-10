@@ -1,7 +1,7 @@
 {
     "name": "com.thelastpointer.tlpsheets",
     "displayName": "TLP.Sheets",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "unity": "2018.4",
     "description": "Download data from Google Sheets into your project.",
     "keywords": [ "data", "download", "google", "sheets", "csv", "database" ],
