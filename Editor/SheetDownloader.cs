@@ -79,6 +79,8 @@ namespace TLP.Sheets
                         () =>
                         {
                             syncing = false;
+                            AssetDatabase.SaveAssets();
+                            AssetDatabase.Refresh();
                         },
                         (cur, count) =>
                         {

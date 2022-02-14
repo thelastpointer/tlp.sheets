@@ -30,13 +30,16 @@ namespace TLP.Sheets
             if (!AssetDatabase.IsValidFolder("Assets/Editor Default Resources"))
                 AssetDatabase.CreateFolder("Assets", "Editor Default Resources");
             AssetDatabase.CreateAsset(sheetList, "Assets/Editor Default Resources/" + SheetListFile);
+
             AssetDatabase.SaveAssets();
+            AssetDatabase.Refresh();
         }
 
         public void Save()
         {
             EditorUtility.SetDirty(Get());
             AssetDatabase.SaveAssets();
+            AssetDatabase.Refresh();
         }
 
         public void DownloadAll(System.Action onFinished = null, System.Action<int, int> onProgress = null)
